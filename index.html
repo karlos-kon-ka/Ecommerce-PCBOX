@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCBox</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="pcboxxx.png" alt="">
+        </div>
+        <div class="barra">
+            <span class="lupa">🔍</span>
+            <input type="text" id="busquedaInput" placeholder="Buscar productos...">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        <div id="carrito" onclick="mostrarCarrito()">🛒</div>
+        <div id="carrito-popup" class="carrito-popup"></div>
+        
+        <div class="menu-desplegable" onclick="toggleMenu()">Categorias</div>
+        <nav class="nav-desplegable">
+            <ul>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Segunda Mano</a></li>
+                <li><a href="#">Atención al Cliente</a></li>
+                <li>Cerrar</li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#">OFERTAS</a></li>
+            <li><a href="#">PROMOCIONES</a></li>
+            <li><a href="#">SMARTPHONES</a></li>
+            <li><a href="#">ORDENADORES</a></li>
+        </ul>
+    </nav>
+
+    <section class="foto-slide">
+        <div class="slider">
+            <ul>
+                <li><img src="1366_2000.jpeg" alt=""></li>
+                <li><img src="image.jpeg" alt=""></li>
+                <li><img src="service-428540_1280.jpg" alt=""></li>
+                
+                <li><img src="bar-621033_1280.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+         <h2 class="titulos">POTENCIA INFINITA: Domina el JUEGO con Nuestra Línea ÉLITE de PCs Gaming</h2>
+    <section class="productos" >
+
+        <div class="card-container">
+            <div class="card">
+                <img src="2590-neo-pc-gaming-pro-blanco-intel-core-i7-11700kf-32gb-1tb-480gb-ssd-rtx-3060-comprar.jpeg" alt="Imagen de Ordenador 1">
+                <h2>PC Master</h2>
+                <p>Modelo: ProTech 2000</p>
+                <p>Procesador: Intel Core i7</p>
+                <p>Memoria RAM: 16GB</p>
+                <p>Almacenamiento: 1TB SSD</p>
+                <p>Precio: $1,499.99</p>
+                <input type="submit" value="selecionar" onclick="agregarAlCarrito('PC Master', '$1,499.99')" >
+                
+             </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="81os59jRJIL.jpeg">
+                    <h2>PC MRyzen</h2>
+                    <p>Modelo: ProTech 2000</p>
+                    <p>Procesador: Intel Core i7</p>
+                    <p>Memoria RAM: 16GB</p>
+                    <p>Almacenamiento: 1TB SSD</p>
+                    <p>Precio: $1,499.99</p>
+                    <input type="submit" value="selecionar" onclick="agregarAlCarrito('PC Master', '$1,499.99')" >
+                    
+                 </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="817tLadBoFL._AC_UF894,1000_QL80_.jpg" alt="Imagen de Ordenador 1">
+                        <h2>PC Master</h2>
+                        <p>Modelo: ProTech 2000</p>
+                        <p>Procesador: Intel Core i7</p>
+                        <p>Memoria RAM: 16GB</p>
+                        <p>Almacenamiento: 1TB SSD</p>
+                        <p>Precio: $1,499.99</p>
+                        <input type="submit" value="selecionar" onclick="agregarAlCarrito('PC Master', '$1,499.99')">
+                        
+                     </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images.jpeg">
+                            <h2>PC Dragon</h2>
+                            <p>Modelo: ProTech 2000</p>
+                            <p>Procesador: Intel Core i7</p>
+                            <p>Memoria RAM: 16GB</p>
+                            <p>Almacenamiento: 1TB SSD</p>
+                            <p>Precio: $1,499.99</p>
+                            <input type="submit" value="selecionar"
+                                onclick="agregarAlCarrito('PC Master', '$1,499.99')">
+                            
+                         </div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="2590-neo-pc-gaming-pro-blanco-intel-core-i7-11700kf-32gb-1tb-480gb-ssd-rtx-3060-comprar.jpeg" alt="Imagen de Ordenador 1">
+                                <h2>PC Master 25</h2>
+                                <p>Modelo: ProTech 2000</p>
+                                <p>Procesador: Intel Core i7</p>
+                                <p>Memoria RAM: 16GB</p>
+                                <p>Almacenamiento: 1TB SSD</p>
+                                <p>Precio: $1,499.99</p>
+                                <input type="submit" value="selecionar"
+                                onclick="agregarAlCarrito('PC Master', '$1,499.99')">
+                                
+                             </div>
+                            </div>
+                            <div class="card-container">
+                                <div class="card">
+                                    <img src="pc-neo-gaming-r7-7700x-rtx-4060-ti-ssd-1tb-32gb.jpeg">
+                                    <h2>PC AMD </h2>
+                                    <p>Modelo: ProTech 2000</p>
+                                    <p>Procesador: Intel Core i7</p>
+                                    <p>Memoria RAM: 16GB</p>
+                                    <p>Almacenamiento: 1TB SSD</p>
+                                    <p>Precio: $1,499.99</p>
+                                    <input type="submit" value="selecionar">
+                                    
+                                 </div>
+                                </div>
+            
+    </section>
+
+
+
+
+    <section class="info-cards">
+        <div class="card">
+            <h2>ENVÍOS 24 HORAS</h2>
+            <p>Recibe tus productos en tan solo 24 horas desde la confirmación del pedido.</p>
+        </div>
+
+        <div class="card">
+            <h2>PEDIDOS PARA EMPRESAS</h2>
+            <p>Ofrecemos soluciones personalizadas para empresas. ¡Haz tus pedidos al por mayor!</p>
+        </div>
+    </section>
+
+    <section class="clientes">
+       
+        
+        <div class="opiniones">
+            <div class="opinion">
+                <img class="foto-cliente" src="man-63015_1280.jpg" alt="Foto Cliente A">
+                <div>
+                    <p class="cliente">Jose Manuel</p>
+                    <p class="texto-opinion">Excelente servicio, estoy muy satisfecho con su atención al cliente y la calidad de sus productos.</p>
+                </div>
+            </div>
+        
+            <div class="opinion">
+                <img class="foto-cliente" src="girl-3576679_1280.jpg" alt="Foto Cliente B">
+                <div>
+                    <p class="cliente">Lucía</p>
+                    <p class="texto-opinion">Rápido envío y productos de alta calidad. ¡Definitivamente recomendaré su tienda!</p>
+                </div>
+            </div>
+        
+            <div class="opinion">
+                <img class="foto-cliente" src="smile-2072907_1280.jpg" alt="Foto Cliente C">
+                <div>
+                    <p class="cliente">Marina P.</p>
+                    <p class="texto-opinion">Increíble experiencia de compra. Los productos llegaron en perfecto estado. Gracias por su profesionalismo.</p>
+                </div>
+                
+            </div>
+            <div class="opinion">
+                <img class="foto-cliente" src="cara1.jpeg" alt="Foto Cliente A">
+                <div>
+                    <p class="cliente">Carlos M.</p>
+                    <p class="texto-opinion">Gran variedad de productos y excelente atención al cliente. Comprar aquí siempre es un acierto.</p>
+                </div>
+            </div>
+            
+            <div class="opinion">
+                <img class="foto-cliente" src="cara2.jpeg" alt="Foto Cliente B">
+                <div>
+                    <p class="cliente">Ana S.</p>
+                    <p class="texto-opinion">Los precios son muy competitivos y la entrega siempre puntual. Recomiendo esta tienda a todos mis amigos.</p>
+                </div>
+            </div>
+            
+            <div class="opinion">
+                <img class="foto-cliente" src="3.jpeg" alt="Foto Cliente C">
+                <div>
+                    <p class="cliente">Laura G.</p>
+                    <p class="texto-opinion">Compré un ordenador y estoy muy satisfecha con el rendimiento. Sin duda, volveré a comprar aquí.</p>
+                </div>
+            </div>
+            
+            <div class="opinion">
+                <img class="foto-cliente" src="4.jpeg" alt="Foto Cliente D">
+                <div>
+                    <p class="cliente">Javier R.</p>
+                    <p class="texto-opinion">La atención al cliente es excelente. Resolveram todos mis problemas de forma rápida y eficiente. ¡Gracias!</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</section>
+<section class="formu-secc">
+    
+    <div class="formu">
+        
+        <form action="">
+            <h2>CONTÁCTANOS</h2>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Correo">
+            <input type="text" placeholder="Teléfono">
+            <input type="submit" value="Enviar">
+        </form>
+     </div>
+</section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Políticas de Privacidad</h3>
+                <ul>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Teléfono: +694 451 483</p>
+            </div>
+            
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 PCBox. Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
